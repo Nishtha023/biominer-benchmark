@@ -1,0 +1,8 @@
+# Dependencies for THIS benchmarking wrapper repo only.
+# BioMiner itself has its own, separate conda environments (main_environment.yml
+# and vllm_environment.yml) that must be set up per its own README --
+# see https://github.com/jiaxianyan/BioMiner
+
+pandas>=2.0.0
+rdkit>=2023.9.1
+numpy>=1.24.0

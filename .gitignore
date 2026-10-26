@@ -1,0 +1,16 @@
+# Data (not committed -- see README "Dataset" section)
+data/pdfs/
+data/*.csv
+
+# Generated results
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS
+.DS_Store
