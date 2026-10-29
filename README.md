@@ -24,7 +24,7 @@ subprocess, then scores its output.
      so that equivalent SMILES written differently still count as a match
    - **Mean best Tanimoto similarity** (RDKit Morgan fingerprints), to give
      partial credit for near-miss structures rather than only pass/fail
-4. **Saves results** (`src/pipeline.py`) — writes a per-paper `results.csv`
+4. **Saves results** (`src/pipeline.py`) - writes a per-paper `results.csv`
    and an aggregate `summary.csv` to the output directory.
 
 ## Repository structure
@@ -124,7 +124,7 @@ python run_benchmark.py \
     --output_dir results
 ```
 
-No paths are hardcoded in the code — every location above is a command-line
+No paths are hardcoded in the code - every location above is a command-line
 argument, so this runs on any machine once the arguments point to valid
 local paths.
 
@@ -164,7 +164,7 @@ available.
 
 - BioMiner's own published performance on its BioVista benchmark (F1 ≈ 0.32
   for full bioactivity triplets; Markush enumeration F1 ≈ 0.70) sets a
-  realistic expectation — this is not a solved problem, so a modest score on
+  realistic expectation - this is not a solved problem, so a modest score on
   our much smaller six-paper set is expected rather than a sign of a broken
   pipeline.
 - This wrapper scores **structure extraction only** (SMILES precision/recall/
