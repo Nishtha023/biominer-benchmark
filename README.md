@@ -1,4 +1,4 @@
-# BioMiner Benchmarking — XN Project (Assignment 1.2)
+# BioMiner Benchmarking - XN Project (Assignment 1.2)
 
 This repository benchmarks [BioMiner](https://github.com/jiaxianyan/BioMiner)
 (Yan et al., 2026) - a multi-modal agentic framework for extracting
