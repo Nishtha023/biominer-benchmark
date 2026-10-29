@@ -99,7 +99,7 @@ This benchmark uses the course-provided six-paper subset (paper IDs 1, 2, 4,
 6, 16, 19), with a ground-truth CSV of 222 confirmed molecule/SMILES pairs
 across those papers. **PDFs and the ground-truth CSV are not committed to
 this repo** (consistent with BioMiner's own approach to its BioVista
-benchmark, which also withholds raw paper PDFs for copyright reasons) —
+benchmark, which also withholds raw paper PDFs for copyright reasons) -
 place your own copies locally:
 
 ```
