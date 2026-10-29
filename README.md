@@ -1,9 +1,9 @@
 # BioMiner Benchmarking — XN Project (Assignment 1.2)
 
 This repository benchmarks [BioMiner](https://github.com/jiaxianyan/BioMiner)
-(Yan et al., 2026) — a multi-modal agentic framework for extracting
+(Yan et al., 2026) - a multi-modal agentic framework for extracting
 protein-ligand bioactivity data, including chemical structures, from
-scientific PDFs — against the course's confirmed-ground-truth molecular
+scientific PDFs - against the course's confirmed-ground-truth molecular
 structure dataset, as part of the XN project's Phase 1 benchmarking.
 
 This is a thin **wrapper and evaluation harness** around BioMiner. It does
@@ -13,13 +13,13 @@ subprocess, then scores its output.
 
 ## What this code does
 
-1. **Loads the dataset** (`src/data_loader.py`) — reads the ground-truth CSV
+1. **Loads the dataset** (`src/data_loader.py`) - reads the ground-truth CSV
    (paper ID, molecule name, canonical SMILES) and matches each paper's
    entries to its corresponding PDF file.
-2. **Runs BioMiner** (`src/biominer_runner.py`) — calls BioMiner's own
+2. **Runs BioMiner** (`src/biominer_runner.py`) - calls BioMiner's own
    `example_open_source.py` CLI on each PDF and parses the predicted SMILES
    out of BioMiner's result files.
-3. **Scores the predictions** (`src/metrics.py`) — computes, per paper:
+3. **Scores the predictions** (`src/metrics.py`) - computes, per paper:
    - **Exact match** precision / recall / F1, using RDKit canonicalization
      so that equivalent SMILES written differently still count as a match
    - **Mean best Tanimoto similarity** (RDKit Morgan fingerprints), to give
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### 2. BioMiner itself (separate installation)
 
-BioMiner is not included in this repo — clone and set it up independently
+BioMiner is not included in this repo - clone and set it up independently
 per its own instructions:
 
 ```bash
@@ -130,7 +130,7 @@ local paths.
 
 ### Output
 
-- `results/results.csv` — one row per paper, with columns including
+- `results/results.csv` - one row per paper, with columns including
   `precision`, `recall`, `f1`, `mean_best_tanimoto`, `true_positives`,
   `false_positives`, `false_negatives`, and `processing_time_sec`
 - `results/summary.csv` — the mean of each metric across all papers
@@ -169,7 +169,7 @@ available.
   pipeline.
 - This wrapper scores **structure extraction only** (SMILES precision/recall/
   Tanimoto), not BioMiner's full bioactivity-triplet output (protein target,
-  measurement type, value, unit) — those fields are outside this course
+  measurement type, value, unit) - those fields are outside this course
   assignment's scope but are visible in BioMiner's raw per-paper output for
   anyone who wants to dig deeper.
 - Running BioMiner locally with BioMiner-Instruct requires at least two
