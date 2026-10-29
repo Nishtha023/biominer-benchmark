@@ -133,8 +133,8 @@ local paths.
 - `results/results.csv` - one row per paper, with columns including
   `precision`, `recall`, `f1`, `mean_best_tanimoto`, `true_positives`,
   `false_positives`, `false_negatives`, and `processing_time_sec`
-- `results/summary.csv` — the mean of each metric across all papers
-- `results/paper_<id>/` — BioMiner's raw output files for that paper,
+- `results/summary.csv` - the mean of each metric across all papers
+- `results/paper_<id>/` - BioMiner's raw output files for that paper,
   preserved for manual inspection
 
 ## Status
