@@ -2,6 +2,8 @@
 """
 run_benchmark.py
 
+test 2
+
 Main entry point for benchmarking BioMiner on the XN project's molecular
 structure extraction dataset.
 
